@@ -1,9 +1,9 @@
-# 🏗️ Plinthes Fred - Modified Version v1.11.0
+# 🏗️ Plinthes Fred - Modified Version v1.22.1
 
-**Blender 5.2 Addon** to automatically generate **baseboards**, **door frames** and **window frames**.
+**Blender 4.1 → 5.2 Addon** to automatically generate **baseboards**, **door frames** and **window frames**.
 
-![Version](https://img.shields.io/badge/Version-1.11.0-blue)
-![Blender](https://img.shields.io/badge/Blender-5.2+-orange)
+![Version](https://img.shields.io/badge/Version-1.22.1-blue)
+![Blender](https://img.shields.io/badge/Blender-4.1%20to%205.2-orange)
 ![Python](https://img.shields.io/badge/Python-3.10+-green)
 ![License](https://img.shields.io/badge/License-GPL-red)
 
@@ -62,7 +62,7 @@ Generates window frames with:
 
 ### Prerequisites
 
-- **Blender** 5.2.0 or higher
+- **Blender** 4.2 to 5.2 (`plinthes_byfred.zip`), or 4.1 (`plinthes_byfred_blender41.py`)
 - **Python** 3.10+ (included with Blender)
 - System: Windows, macOS, or Linux
 
@@ -256,7 +256,7 @@ Same range as Baseboard, adapted for encasements.
 ### Addon doesn't appear
 
 **Verify:**
-- Blender 5.2+ is used ✓
+- Blender 4.1 to 5.2 is used ✓
 - The folder is in the correct location ✓
 - Blender has been completely restarted ✓
 - In Preferences > Add-ons, check the addon ✓
@@ -282,7 +282,7 @@ Same range as Baseboard, adapted for encasements.
 ### Python error on startup
 
 **Verify:**
-- Blender version is **5.2.0+**
+- Blender version is **4.1 to 5.2** (4.1: use `plinthes_byfred_blender41.py`)
 - No other version of this addon is enabled
 
 ---
@@ -328,7 +328,7 @@ Save your preferred configurations:
 If you encounter an issue:
 1. Note exact steps to reproduce
 2. Check Blender console for errors
-3. Verify Blender 5.2+ is used
+3. Verify Blender 4.1 to 5.2 is used
 
 ---
 
@@ -343,6 +343,21 @@ If you encounter an issue:
 ---
 
 ## 🔄 Modifications in This Version
+
+### v1.22.1
+
+- 🐛 **Window / Door Frame fix:** the casing could be built *inside* the wall
+  (invisible, not touching the opening edge) depending on the order of the
+  selected loop. The outline normal is now oriented from the wall face, so the
+  casing always grows out of the wall.
+- 🔧 **Reveal** now defaults to `0` so the casing touches the opening edge.
+- 🔧 Blender 5.x: no longer relies on the deprecated `Material.use_nodes`.
+- 📦 `plinthes_byfred.zip` (extension) works on Blender 4.2 → 5.2.
+  For **Blender 4.1**, install `plinthes_byfred_blender41.py`
+  (Preferences > Add-ons > Install from Disk).
+- ⚠️ Frames created with an older version keep their old orientation:
+  delete and recreate them (or toggle **Flip Side**).
+
 
 ### Modified Version v1.11.0
 
@@ -432,7 +447,7 @@ Possible improvements:
 
 | Component | Minimum | Recommended |
 |-----------|---------|-------------|
-| Blender | 5.2.0 | 5.2+ |
+| Blender | 4.1.0 | 5.0 – 5.2 |
 | Python | 3.10 | 3.11+ |
 | System | Windows/Mac/Linux | All |
 
@@ -499,8 +514,8 @@ With this modified version, you have access to **all generation power** in a **s
 ## 📞 Information
 
 - **Original Addon**: byfred
-- **Version**: 1.11.0 (Modified)
-- **Blender**: 5.2+
+- **Version**: 1.22.1 (Modified)
+- **Blender**: 4.1 – 5.2
 - **License**: GPL v3
 - **Date**: August 2024
 
