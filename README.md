@@ -1,8 +1,8 @@
-# 🏗️ Plinthes Fred - Modified Version v1.22.1
+# 🏗️ Plinthes Fred - Modified Version v1.27.0
 
 **Blender 4.1 → 5.2 Addon** to automatically generate **baseboards**, **door frames** and **window frames**.
 
-![Version](https://img.shields.io/badge/Version-1.22.1-blue)
+![Version](https://img.shields.io/badge/Version-1.27.0-blue)
 ![Blender](https://img.shields.io/badge/Blender-4.1%20to%205.2-orange)
 ![Python](https://img.shields.io/badge/Python-3.10+-green)
 ![License](https://img.shields.io/badge/License-GPL-red)
@@ -344,6 +344,14 @@ If you encounter an issue:
 
 ## 🔄 Modifications in This Version
 
+### v1.27.0
+
+- ✨ **Wainscoting (lambris)**: new trim type, alongside baseboards and door / window frames.
+- ✨ **Auto Detect**: scans the whole wall mesh and builds everything at once - baseboards along the floor, a door frame on every opening that reaches the floor, a window frame on every other opening.
+- ✨ **Apply Texture**: puts an image on the selected baseboards, wainscots and frames (Sollumz default shader). With nothing selected, it is kept for the next ones you create.
+- 🔧 Blender 5.x: material checks no longer depend on the deprecated `Material.use_nodes`.
+- 📦 Install `plinthes_byfred.zip` (Blender 4.2 → 5.2) from the Release page.
+
 ### v1.22.1
 
 - 🐛 **Window / Door Frame fix:** the casing could be built *inside* the wall
@@ -514,7 +522,7 @@ With this modified version, you have access to **all generation power** in a **s
 ## 📞 Information
 
 - **Original Addon**: byfred
-- **Version**: 1.22.1 (Modified)
+- **Version**: 1.27.0 (Modified)
 - **Blender**: 4.1 – 5.2
 - **License**: GPL v3
 - **Date**: August 2024
