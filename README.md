@@ -1,8 +1,8 @@
-# 🏗️ Plinthes Fred - Modified Version v1.27.0
+# 🏗️ Plinthes Fred - Modified Version v1.33.2
 
 **Blender 4.1 → 5.2 Addon** to automatically generate **baseboards**, **door frames** and **window frames**.
 
-![Version](https://img.shields.io/badge/Version-1.27.0-blue)
+![Version](https://img.shields.io/badge/Version-1.33.2-blue)
 ![Blender](https://img.shields.io/badge/Blender-4.1%20to%205.2-orange)
 ![Python](https://img.shields.io/badge/Python-3.10+-green)
 ![License](https://img.shields.io/badge/License-GPL-red)
@@ -344,6 +344,16 @@ If you encounter an issue:
 
 ## 🔄 Modifications in This Version
 
+### v1.33.2
+
+- ✨ **Continuous texture**: the texture is anchored to the wall - the grain carries on from one side of a door to the other, and from the baseboard up the leg of the door casing (on by default).
+- ✨ **Baseboard around doors**: Auto Detect can run the baseboard round the doors in one piece instead of making separate door frames.
+- ✨ **Auto Detect options**: checkboxes to choose what it builds - baseboards, ceiling mouldings, doors, windows.
+- ✨ **Openings from selected edges**: door / window outlines can be taken straight from the selected edges.
+- 🌍 **Interface language**: Auto (follows Blender), English, Français or Español.
+- 🐛 Better detection of door / window reveals: a narrow piece of wall at a corner is no longer mistaken for a reveal, and mouldings never wrap into an opening.
+- 📦 Install `plinthes_byfred.zip` (Blender 4.2 → 5.2).
+
 ### v1.27.0
 
 - ✨ **Wainscoting (lambris)**: new trim type, alongside baseboards and door / window frames.
@@ -522,7 +532,7 @@ With this modified version, you have access to **all generation power** in a **s
 ## 📞 Information
 
 - **Original Addon**: byfred
-- **Version**: 1.27.0 (Modified)
+- **Version**: 1.33.2 (Modified)
 - **Blender**: 4.1 – 5.2
 - **License**: GPL v3
 - **Date**: August 2024
